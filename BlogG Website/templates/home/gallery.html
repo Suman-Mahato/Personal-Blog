@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सुमन ब्लग | Gallery</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        /*====CSS Started of Gallery Section====*/
+      
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            padding: 20px;
+            width: 1280px;
+            margin: 40px auto;
+
+        }
+
+        section ul {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        section ul li {
+            list-style: none;
+            background: #eee;
+            padding: 8px 20px;
+            margin: 5px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            font-weight: 700;
+            color: brown;
+        }
+
+        section ul li.active {
+            background: #03a9f4;
+            color: #fff;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .gallery .itemBox {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 5px;
+        }
+
+        .gallery .itemBox img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+
+        /*====End of CSS  Gallery Section====*/
+
+        /*Main CSS started */
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: grey;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-weight: 700;
+            color: #66FCF1;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        a {
+            color: #66FCF1;
+        }
+
+        input {
+            background-color: #1F2833;
+            color: #66FCF1;
+            padding: 0.4rem;
+        }
+
+        img {
+            filter: grayscale(50%) brightness(0.8);
+        }
+
+        img.rounded-circle {
+            filter: none;
+            border: 2px solid #66FCF1;
+        }
+
+        /*Header */
+        .navbar {
+            background-color: #0B0C10;
+            color: #66FCF1;
+        }
+
+        .navbar input {
+            background-color: #1F2833;
+        }
+
+        .navbar-brand,
+        .footer-logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .btn-main {
+            background-color: #66FCF1;
+            color: #0B0C10;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Header Section-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">सुमन ब्लग</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link mx-3" href="/">Home <i class="fa fa-home" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/about">About <i class="fa fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/blog">Blog <i class="fa fa-rss-square" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/gallery">Gallery <i class="fa fa-image"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/contact">Contact <i class="fa fa-address-book"></i></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="input border-0 " type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn-main btn btn-outline-success  my-sm-0" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--End of Header section-->
+
+    <!--Start Gallery Body Section-->
+    <section>
+        <ul>
+            <li class="list active" data-filter="all">All</li>
+            <li class="list" data-filter="chitwan">Chitwan</li>
+            <li class="list" data-filter="kathmandu">Kathmandu</li>
+            <li class="list" data-filter="pokhara">Pokhara</li>
+            <li class="list" data-filter="lumbini">Lumbini</li>
+            <li class="list" data-filter="mustang">Mustang</li>
+            <li class="list" data-filter="bhaktapur">Bhaktapur</li>
+            <li class="list" data-filter="palpa">Palpa</li>
+            <li class="list" data-filter="mardi">Mardi</li>
+            <li class="list" data-filter="abc">ABC</li>
+            <li class="list" data-filter="nagarkot">Nagarkot</li>
+
+
+          
+
+        </ul>
+        <div class="gallery">
+            <div class="itemBox kathmandu"><a href="{%static 'img/kathmandu1jpg' %}"><img src="{%static 'img/kathmandu1.jpg' %}"></div></a>
+            <div class="itemBox kathmandu"><a href="{%static 'img/kathmandu2.jpg' %}"><img src="{%static 'img/kathmandu2.jpg' %}"></div></a>
+            <div class="itemBox kathmandu"><a href="{%static 'img/kathmandu3.jpg' %}"><img src="{%static 'img/kathmandu3.jpg' %}"></div></a>
+            <div class="itemBox kathmandu"><a href="{%static 'img/kathmandu4.jpg' %}"><img src="{%static 'img/kathmandu4.jpg' %}"></div></a>
+            <div class="itemBox kathmandu"><a href="{%static 'img/kathmandu5.jpg' %}"><img src="{%static 'img/kathmandu5.jpg' %}"></div></a>
+            <div class="itemBox kathmandu"><a href="{%static 'img/kathmandu6.jpg' %}"><img src="{%static 'img/kathmandu6.jpg' %}"></div></a>
+            <div class="itemBox kathmandu"><a href="{%static 'img/kathmandu7.jpg' %}"><img src="{%static 'img/kathmandu7.jpg' %}"></div></a>
+            <div class="itemBox kathmandu"><a href="{%static 'img/kathmandu8.jpg' %}"><img src="{%static 'img/kathmandu8.jpg' %}"></div></a>
+            <div class="itemBox kathmandu"><a href="{%static 'img/kathmandu9.jpg' %}"><img src="{%static 'img/kathmandu9.jpg' %}"></div></a>
+            <div class="itemBox kathmandu"><a href="{%static 'img/kathmandu10.jpg' %}"><img src="{%static 'img/kathmandu10.jpg' %}"></div></a>
+
+            <div class="itemBox chitwan"><a href="{%static 'img/chitwan1.jpg' %}"> <img src="{%static 'img/chitwan1.jpg' %}"></div></a>
+            <div class="itemBox chitwan"><a href="{%static 'img/chitwan2.jpg' %}"><img src="{%static 'img/chitwan2.jpg' %}"></div></a>
+            <div class="itemBox chitwan"><a href="{%static 'img/chitwan3.jpg' %}"><img src="{%static 'img/chitwan3.jpg' %}"></div></a>
+            <div class="itemBox chitwan"><a href="{%static 'img/chitwan4.jpg' %}"><img src="{%static 'img/chitwan4.jpg' %}"></div></a>
+            <div class="itemBox chitwan"><a href="{%static 'img/chitwan5.jpg' %}"><img src="{%static 'img/chitwan5.jpg' %}"></div></a>
+            <div class="itemBox chitwan"><a href="{%static 'img/chitwan6.jpg' %}"><img src="{%static 'img/chitwan6.jpg' %}"></div></a>
+            <div class="itemBox chitwan"><a href="{%static 'img/chitwan7.jpg' %}"><img src="{%static 'img/chitwan7.jpg' %}"></div></a>
+            <div class="itemBox chitwan"><a href="{%static 'img/chitwan8.jpg' %}"><img src="{%static 'img/chitwan8.jpg' %}"></div></a>
+            <div class="itemBox chitwan"><a href="{%static 'img/chitwan9.jpg' %}"><img src="{%static 'img/chitwan9.jpg' %}"></div></a>
+            <div class="itemBox chitwan"><a href="{%static 'img/chitwan10.jpg' %}"><img src="{%static 'img/chitwan10.jpg' %}"></div></a>
+            <div class="itemBox chitwan"><a href="{%static 'img/chitwan11.jpg' %}"><img src="{%static 'img/chitwan11.jpg' %}"></div></a>
+            <div class="itemBox chitwan"><a href="{%static 'img/chitwan12.jpg' %}"><img src="{%static 'img/chitwan12.jpg' %}"></div></a>
+
+            <div class="itemBox pokhara"><a href="{%static 'img/pokhara1.jpg' %}"><img src="{%static 'img/pokhara1.jpg' %}"></div></a>
+            <div class="itemBox pokhara"><a href="{%static 'img/pokhara2.jpg' %}"><img src="{%static 'img/pokhara2.jpg' %}"></div></a>
+            <div class="itemBox pokhara"><a href="{%static 'img/pokhara3.jpg' %}"><img src="{%static 'img/pokhara3.jpg' %}"></div></a>
+            <div class="itemBox pokhara"><a href="{%static 'img/pokhara4.jpg' %}"><img src="{%static 'img/pokhara4.jpg' %}"></div></a>
+            <div class="itemBox pokhara"><a href="{%static 'img/pokhara5.jpg' %}"><img src="{%static 'img/pokhara5.jpg' %}"></div></a>
+            <div class="itemBox pokhara"><a href="{%static 'img/pokhara6.jpg' %}"><img src="{%static 'img/pokhara6.jpg' %}"></div></a>
+            <div class="itemBox pokhara"><a href="{%static 'img/pokhara7.jpg' %}"><img src="{%static 'img/pokhara7.jpg' %}"></div></a>
+            <div class="itemBox pokhara"><a href="{%static 'img/pokhara8.jpg' %}"><img src="{%static 'img/pokhara8.jpg' %}"></div></a>
+
+            <div class="itemBox lumbini"><a href="{%static 'img/lumbini1.jpg' %}"><img src="{%static 'img/lumbini1.jpg' %}"></div></a>
+            <div class="itemBox lumbini"><a href="{%static 'img/lumbini2.jpg' %}"><img src="{%static 'img/lumbini2.jpg' %}"></div></a>
+            <div class="itemBox lumbini"><a href="{%static 'img/lumbini3.jpg' %}"><img src="{%static 'img/lumbini3.jpg' %}"></div></a>
+            <div class="itemBox lumbini"><a href="{%static 'img/lumbini4.jpg' %}"><img src="{%static 'img/lumbini4.jpg' %}"></div></a>
+            <div class="itemBox lumbini"><a href="{%static 'img/lumbini5.jpg' %}"><img src="{%static 'img/lumbini5.jpg' %}"></div></a>
+            <div class="itemBox lumbini"><a href="{%static 'img/lumbini6.jpg' %}"><img src="{%static 'img/lumbini6.jpg' %}"></div></a>
+
+            <div class="itemBox mustang"><a href="{%static 'img/mustang1.jpg' %}"><img src="{%static 'img/mustang1.jpg' %}"></div></a>
+            <div class="itemBox mustang"><a href="{%static 'img/mustang2.jpg' %}"><img src="{%static 'img/mustang2.jpg' %}"></div></a>
+            <div class="itemBox mustang"><a href="{%static 'img/mustang3.jpg' %}"><img src="{%static 'img/mustang3.jpg' %}"></div></a>
+
+            <div class="itemBox bhaktapur"><a href="{%static 'img/bhaktapur1.jpg' %}"><img src="{%static 'img/bhaktapur1.jpg' %}"></div></a>
+            <div class="itemBox bhaktapur"><a href="{%static 'img/bhaktapur2.jpg' %}"><img src="{%static 'img/bhaktapur2.jpg' %}"></div></a>
+            <div class="itemBox bhaktapur"><a href="{%static 'img/bhaktapur3.jpg' %}"><img src="{%static 'img/bhaktapur3.jpg' %}"></div></a>
+            <div class="itemBox bhaktapur"><a href="{%static 'img/bhaktapur4.jpg' %}"><img src="{%static 'img/bhaktapur4.jpg' %}"></div></a>
+            <div class="itemBox bhaktapur"><a href="{%static 'img/bhaktapur5.jpg' %}"><img src="{%static 'img/bhaktapur5.jpg' %}"></div></a>
+
+            <div class="itemBox palpa"><a href="{%static 'img/palpa1.jpg' %}"><img src="{%static 'img/palpa1.jpg' %}"></div></a>
+            <div class="itemBox palpa"><a href="{%static 'img/palpa2.jpg' %}"><img src="{%static 'img/palpa2.jpg' %}"></div></a>
+
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.list').click(function () {
+                const value = $(this).attr('data-filter');
+                if (value == 'all') {
+                    $('.itemBox').show('1000');
+                }
+                else {
+                    $('.itemBox').not('.' + value).hide('1000');
+                    $('.itemBox').filter('.' + value).show('1000');
+                }
+            })
+
+
+            //Add Active Class on Selected items///
+            $('.list').click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+            })
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>सुमन ब्लग | Website</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{%static 'css/main.css' %}">
+</head>
+
+<body>
+    <!--Header & Nav Section-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">सुमन ब्लग</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link mx-3" href="/">Home <i class="fa fa-home" aria-hidden="true"></i> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/about">About <i class="fa fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/blog">Blog <i class="fa fa-rss-square" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/gallery">Gallery <i class="fa fa-image"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/contact">Contact <i class="fa fa-address-book"></i></a>
+                    </li>
+                </ul>
+                <form method="#" action="#" class="form-inline my-2 my-lg-0">
+                    <input class="input border-0 " type="search" placeholder="Search" aria-label="query" name="search"
+                        id="search" />
+                    <button class="btn-main btn btn-outline-success  my-sm-0" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--End of Header & Nav section-->
+
+    <!--Hero Section-->
+    <section class="hero py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="hero-post shadow">
+                        <img class="img.fluid" alt="" src="{%static 'img/Suman.jpg' %}" />
+                        <div class="hero-post-badges text-center">
+                            <a class="p-2 px-3 mb-2" href="#"><i class=" mr-2 fa fa-calendar-o" aria-hidden="true"></i>
+                                28 March
+                                2020
+                            </a>
+                            <a class="p-2 px-3" href="#">मार्दी हिमालय</a>
+                        </div>
+                        <div class="hero-post-content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img alt="Authour" class="img-fluid rounded-circle"
+                                        src="{%static 'img/pp1.jpg' %}" />
+                                </div>
+                                <div class="col-md-10">
+                                    <h2>भविष्य उनीहरुको लागि हो,
+                                        जसले आज त्यसको लागि तयारि गर्छन् ।</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Rightside ko post ko lagi-->
+                <div class="col-lg-4">
+
+                    <div class="hero-post shadow mb-4">
+                        <video src="{%static 'videos/video1.mp4' %}" autoplay muted loop></video>
+                        <!---<img class="img.fluid" alt="" src="img/Rsideimg1.jpeg" />-->
+                        <div class="hero-post-badges text-center">
+                            <a class="p-2 px-3 mb-2" href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i> 28
+                                March
+                                2020
+                            </a>
+                            <a class="p-2 px-3 mb-2" href="#">काठमाण्डु</a>
+                        </div>
+                        <div class="hero-post-content">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img alt="Authour" class="img-fluid rounded-circle"
+                                        src="{%static 'img/pp1.jpg' %}" />
+                                </div>
+                                <div class="col-sm-9">
+                                    <h3>चाहे तिमि मलाई कहिले मिल या न मिल…
+                                        </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="hero-post shadow mb-4">
+                        <video src="{%static 'videos/video2.mp4' %}" autoplay muted loop></video>
+                        <!---<img class="img.fluid" alt="" src="img/Rsideimg1.jpeg" />-->
+                        <div class="hero-post-badges text-center">
+                            <a class="p-2 px-3 mb-2" href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i> 28
+                                March
+                                2020
+                            </a>
+                            <a class="p-2 px-3 mb-2" href="#">पोखरा</a>
+                        </div>
+                        <div class="hero-post-content">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img alt="Authour" class="img-fluid rounded-circle"
+                                        src="{%static 'img/pp1.jpg' %}" />
+                                </div>
+                                <div class="col-sm-9">
+                                    <h3>The purpose of our lives is to be happy.</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="hero-post shadow mb-4">
+                        <!--<video src="video3.mp4" autoplay muted loop></video>-->
+                        <img class="img.fluid" alt="" src="{%static 'img/chitwan12.jpg' %}" />
+                        <div class="hero-post-badges text-center">
+                            <a class="p-2 px-3 mb-2" href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i> 28
+                                March
+                                2020
+                            </a>
+                            <a class="p-2 px-3 mb-2" href="#">चितवन</a>
+                        </div>
+                        <div class="hero-post-content">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img alt="Authour" class="img-fluid rounded-circle"
+                                        src="{%static 'img/pp1.jpg' %}" />
+                                </div>
+                                <div class="col-sm-9">
+                                    <h3>Get busy living or get busy dying. </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-post shadow mb-0">
+                        <!--<video src="video3.mp4" autoplay muted loop></video>-->
+                        <img class="img.fluid" alt="" src="{%static 'img/bike4.jpg' %}" />
+                        <div class="hero-post-badges text-center">
+                            <a class="p-2 px-3 mb-2" href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i> 28
+                                March
+                                2020
+                            </a>
+                            <a class="p-2 px-3 mb-2" href="#">लुम्बिनी</a>
+                        </div>
+                        <div class="hero-post-content">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img alt="Authour" class="img-fluid rounded-circle"
+                                        src="{%static 'img/pp1.jpg' %}" />
+                                </div>
+                                <div class="col-sm-9">
+                                    <h3>More smiling, less worrying.</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end of Right side post-->
+    <!--=======================================End of Hero Section============================-->
+    <!--Main Blog Section-->
+    <section class="blog-posts py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <article class="blog-post mb-3 shadow">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img class="img-fluid" alt="" src="{%static 'img/hero1.jpg' %}" />
+                            </div>
+                            <div class="col-sm-8">
+                                <h3 class="m-0 mt-2">Kathmandu</h3>
+                                <p class="m-0">
+                                    Kathmandu Valley is illustrated by seven groups of monuments and buildings which display the full range of historic and artistic achievements for which the Kathmandu Valley is world famous. It include the Durbar Squares Patan and Bhaktapur, the Buddhist stupas of Swayambhu and Bauddhanath, Pashupatinath.
+                                </p>
+                                <div class="badge">
+                                    <a href="/blog">READ MORE &rarr;</a>
+                                    <a href="#">MOREINFO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="blog-post mb-3 shadow">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img class="img-fluid" alt="" src="{%static 'img/hero6.jpg' %}" />
+                            </div>
+                            <div class="col-sm-8">
+                                <h3 class="m-0 mt-2">Chitwan</h3>
+                                <p class="m-0">
+                                    Chitwan is home of One Horn Rhino, Bengal Tiger, Sloth Bear, Leopard along with different reptiles and different species of birds.  It is one of the largest playgrounds of wild animals in Nepal. Elephant Safari inside Chitwan National Park is one of the attractions of this park where tourist come from different countries every year. 
+                                </p>
+                                <div class="badge">
+                                    <a href="/blog">READ MORE &rarr;</a>
+                                    <a href="#">MOREINFO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="blog-post mb-3 shadow">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img class="img-fluid" alt="" src="{%static 'img/hero5.jpg' %}" />
+                            </div>
+                            <div class="col-sm-8">
+                                <h3 class="m-0 mt-2">Pokhara</h3>
+                                <p class="m-0">
+                                    Pokhara is the second most visited city in Nepal, as well as most popular tourist destinations. It is famous for its tranquil atmosphere and the beautiful surrounding countryside.From Pokhara you can see three out of the ten highest mountains in the world.
+
+ 
+                                </p>
+                                <div class="badge">
+                                    <a href="/blog">READ MORE &rarr;</a>
+                                    <a href="#">MOREINFO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="blog-post mb-3 shadow">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img class="img-fluid" alt="" src="{%static 'img/hero4.jpg' %}" />
+                            </div>
+                            <div class="col-sm-8">
+                                <h3 class="m-0 mt-2">Annapurna Base Camp</h3>
+                                <p class="m-0">
+                                    The Annapurna Base Camp trek is one of the most popular treks in the Annapurna region base of 7,000 and 8,000 meter peaks in a such a short period of time. The trail goes alongside terraced rice paddies, lush rhododendron forests and high altitude landscapes with the Annapurna Range in view most of the times.
+
+                                </p>
+                                <div class="badge">
+                                    <a href="/blog">READ MORE &rarr;</a>
+                                    <a href="#">MOREINFO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="blog-post mb-3 shadow">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img class="img-fluid" alt="" src="{%static 'img/hero3.jpg' %}" />
+                            </div>
+                            <div class="col-sm-8">
+                                <h3 class="m-0 mt-2">Swayambhunath (Monkey Temple)</h3>
+                                <p class="m-0">
+                                    Located on a small hillock named Swayambhunath, this temple is a famous one located to the northwest of the Kathmandu Valley. Famously known as the monkey temple, this tourist destination receives pilgrims and tourists from every nook and corner of the world.
+                                </p>
+                                <div class="badge">
+                                    <a href="/blog">READ MORE &rarr;</a>
+                                    <a href="#">MOREINFO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="blog-post mb-3 shadow">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img class="img-fluid" alt="" src="{%static 'img/hero7.jpg' %}" />
+                            </div>
+                            <div class="col-sm-8">
+                                <h3 class="m-0 mt-2">Lumbini</h3>
+                                <p class="m-0">
+                                    Lumbini is the birthplace of Buddha and a UNESCO World Heritage Site. One of the most impressive sights here is the World Peace Pagoda.Siddhartha Gautama, the Lord Buddha, was born in 623 B.C. in the famous gardens of Lumbini, which soon became a place of pilgrimage.
+                                </p>
+                                <div class="badge">
+                                    <a href="/blog">READ MORE &rarr;</a>
+                                    <a href="#">MOREINFO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <aside class="col-md-4 px-4">
+                    <!--Right Side Social-links-->
+                    <div class="social-links row text-center">
+                        <div class="col-sm-4 py-3">
+                            <a href="#" class="social-link  w-100">
+                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-4 py-3 secondary-color">
+                            <a href="#" class="social-link w-100">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-4 py-3">
+                            <a href="#" class="social-link w-100">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-4 py-3 secondary-color">
+                            <a href="#" class="social-link  w-100">
+                                <i class="fa fa-google" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-4 py-3 ">
+                            <a href="#" class="social-link  w-100">
+                                <i class="fa fa-snapchat" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-4 py-3 secondary-color">
+                            <a href="#" class="social-link w-100">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--Popular Author-->
+                    <h4 class="aside-heading mt-4 mb-3 pl-2"> Popular Authors </h4>
+                    <article class="author row author mb-3">
+                        <div class="col-sm-3">
+                            <img class="img-fluid rounded-circle" alt="" src="{%static 'img/person5.png' %}">
+                        </div>
+                        <div class="col-sm-8">
+                            <h5 class="m-0">Suman Mahato</h5>
+                            <p class="m-0">मौसम धेरै चिसो छ ए साथी हिड GF लाई आगो लगाऊ ??????????????????????</p>
+                            <div class="author-social-links">
+                                <a href="#"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                <a href="#"> <i class="fa fa-youtube" aria-hidden="true"></i></i></a>
+                                <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"> <i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="row author mb-3">
+                        <div class="col-sm-3">
+                            <img class="img-fluid rounded-circle" alt="" src="{%static 'img/person5.png' %}">
+                        </div>
+                        <div class="col-sm-8">
+                            <h5 class="m-0">Sachin Moktan</h5>
+                            <p class="m-0">मेरोत कोहि साथी छैन सबै कमिना मेरो दिल का टुक्रा हुन् ।।।।।।।।।।।।।।।।।।।।</p>
+                            <div class="author-social-links">
+                                <a href="#"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                <a href="#"> <i class="fa fa-youtube" aria-hidden="true"></i></i></a>
+                                <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"> <i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="row author mb-3">
+                        <div class="col-sm-3">
+                            <img class="img-fluid rounded-circle" alt="" src="{%static 'img/person5.png' %}">
+                        </div>
+                        <div class="col-sm-8">
+                            <h5 class="m-0">Anish Khadka</h5>
+                            <p class="m-0">माने जिन्दगि Limited छ , तर मेरो साथी को साथ Unlimited छ ।।।।।।।।।</p>
+                            <div class="author-social-links">
+                                <a href="#"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                <a href="#"> <i class="fa fa-youtube" aria-hidden="true"></i></i></a>
+                                <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"> <i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="row author mb-3">
+                        <div class="col-sm-3">
+                            <img class="img-fluid rounded-circle" alt="" src="{%static 'img/person5.png' %}">
+                        </div>
+                        <div class="col-sm-8">
+                            <h5 class="m-0">Bikrant Shrestha</h5>
+                            <p class="m-0">साथीको माया पनि खिचडी भन्दा कम हुदैन , स्वाद न भएपनि भुख भने मेटाई दिन्छ ।</p>
+                            <div class="author-social-links">
+                                <a href="#"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                <a href="#"> <i class="fa fa-youtube" aria-hidden="true"></i></i></a>
+                                <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"> <i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="row author mb-3">
+                        <div class="col-sm-3">
+                            <img class="img-fluid rounded-circle" alt="" src="{%static 'img/person5.png' %}">
+                        </div>
+                        <div class="col-sm-8">
+                            <h5 class="m-0">Aayam Buda Magar</h5>
+                            <p class="m-0">मत टाढा भाको थिए तिमीलाई एहेसास देखाउन तर तिमिलेत मेरो बिनानै बाच्न सिकी हलेउ ।</p>
+                            <div class="author-social-links">
+                                <a href="#"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                <a href="#"> <i class="fa fa-youtube" aria-hidden="true"></i></i></a>
+                                <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"> <i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="row author mb-3">
+                        <div class="col-sm-3">
+                            <img class="img-fluid rounded-circle" alt="" src="{%static 'img/person5.png' %}">
+                        </div>
+                        <div class="col-sm-8">
+                            <h5 class="m-0">Sunil Pant</h5>
+                            <p class="m-0">धेरै सुन्दर हुन्छन एस्तो सम्बन्ध जस्मा कसैको हक नहोस र कसैको सक पनि ह होस् ।</p>
+                            <div class="author-social-links">
+                                <a href="#"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                <a href="#"> <i class="fa fa-youtube" aria-hidden="true"></i></i></a>
+                                <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"> <i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Add Categories-->
+                    <h4 class="aside-heading mt-4 mb-3 pl-2"> Places To Visit in Nepal </h4>
+                    <div class="badges w-100">
+                        <a href="/gallery">Pokhara</a>
+                        <a href="/gallery"> Kathmandu</a>
+                        <a href="/gallery">Lumbini</a>
+                        <a href="/gallery">Sagarmatha National Park</a>
+                        <a href="/gallery">Bhaktapur</a>
+                        <a href="/gallery">Nagarkot</a>
+                        <a href="/gallery">Poon Hill</a>
+                        <a href="/gallery">Trekking in the Langtang Region</a>
+                        <a href="/gallery">Trekking in the Annapurna Region</a>
+                        <a href="/gallery">Boudhanath Stupa (Bodhnath)</a>
+                        <a href="/gallery">Bhaktapur</a>
+                        <a href="/gallery">Lalitpur</a>
+                        <a href="/gallery">Rara Treeking</a>
+                        <a href="/gallery">Mardi Himal</a>
+                        <a href="/gallery">Annapurna Base Camp</a>
+                        <a href="/gallery">Namche Bazaar</a>
+                        <a href="/gallery">Mustang</a>
+                        <a href="/gallery">Palpa</a>
+                        <a href="/gallery">Chitwan</a>
+                        <a href="/gallery">Dolpa (Dolpo)</a>
+                        <a href="/gallery">Muktinath</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <!--============End of Main Blog Section======================-->
+
+
+    <!--Footer Section-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <!--<a class="footer-logo" href="#"> Blog </a>-->
+                    <h4>Rising</h4>
+                    <p>I am from Chitwan. I have done my schooling from Bright Star Secondary Boarding School Chitwan, and graduation Bachlor in Computer Engineering from Kantipur Engineering College Dhapakhel, Lalitpur.When I was on Engineering College. I had made up my mind to become a software engineer. I will intrested in Programming Language & love Programming.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h4>Usefull Links</h4>
+                    <ul>
+                        <li><a class="home" href="/">Home</a></li>
+                        <li><a class="contact" href="/about">About</a></li>
+                        <li><a class="services" href="#">Blog</a></li>
+                        <li><a class="Privacy" href="/gallery">Gallery</a></li>
+                        <li><a class="newsletter" href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h4>Youtube Video</h4>
+                    <div class="embed-responsive embed-responsive-16by9 mb-4">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                          allowfullscreen></iframe>
+                      </div>
+                </div>
+
+            </div>
+            <div class="w-100 text-center credits">
+                <h6>Made by <a><em>Suman Mahato</em></a> &copy; 2020 || All right reserved </h6>
+            </div>
+        </div>
+        </div>
+        </div>
+    </footer>
+    <!--========End of Footer Section=======-->
+</body>
+
+</html>

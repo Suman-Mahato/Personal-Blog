@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सुमन ब्लग | About</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-weight: 700;
+            color: #66FCF1;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        a {
+            color: #66FCF1;
+        }
+
+        input {
+            background-color: #1F2833;
+            color: #66FCF1;
+            padding: 0.4rem;
+        }
+
+
+        /*Header */
+
+        body {
+            background-image: url(static/img/about1.png);
+            background-size: 100%;
+            overflow: hidden;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .navbar {
+            background-color: #0B0C10;
+            color: #66FCF1;
+        }
+
+        .navbar input {
+            background-color: #1F2833;
+        }
+
+        .navbar-brand,
+        .footer-logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .btn-main {
+            background-color: #66FCF1;
+            color: #0B0C10;
+        }
+        /*End of
+
+
+        /*=====About Body Started====*/
+
+        .main-banner-section {
+            position: relative;
+            padding: 20px 0px 250px;
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: cover;
+        }
+
+        .main-banner-section .text p {
+            color: yellowgreen;
+        }
+
+        p,
+        .text {
+            position: relative;
+            line-height: 1.5rem;
+            text-align: justify;
+        }
+
+        .sec-title.light .title,
+        .sec-title.light h2 {
+            color: wheat;
+            font-size: 30px;
+            font-weight: 700;
+            font-family: cursive;
+            margin-left: 8rem;
+            
+        }
+
+        .btn-style-one {
+            position: relative;
+            line-height: 30px;
+            color: white;
+            font-size: 15px;
+            font-weight: 700;
+            border: 1px solid #fdb40e;
+            background: #fdb40e;
+            text-transform: capitalize;
+            padding: 15px 50px 15px;
+        }
+
+        .them.btn {
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .btn-style-one:hover {
+            background-color: transparent;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Header Section-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">सुमन ब्लग</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link mx-3" href="/">Home <i class="fa fa-home" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/about">About <i class="fa fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/blog">Blog <i class="fa fa-rss-square" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/gallery">Gallery <i class="fa fa-image"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/contact">Contact <i class="fa fa-address-book"></i></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="input border-0 " type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn-main btn btn-outline-success  my-sm-0" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--End of Header section-->
+
+
+
+    <!--=======About Section=====-->
+    <section class="main-banner-section container">
+        <div class="auto-container">
+            <div class="sec-title light col-md-6">
+                <h2>सुमन 
+                    महतो</h2>
+                <br><br>
+                <div class="text">
+                    <p>Hi! I am <em>Suman Mahato,</em> a web designer/developer focused on crafting great web experiences.
+                        Designing and Coding have been my passion since the days I started working with computers but I
+                        found myself into web design/development since 2018. I enjoy creating beautifully designed,
+                        intuitive and functional websites..</p>
+                    <p>I am from Chitwan. I have done my schooling from Bright Star Secondary Boarding School Chitwan,
+                        and graduation Bachlor in Computer Engineering from Kantipur Engineering College Dhapakhel,
+                        Lalitpur.When I was on Engineering College. I had made up my mind to become a software engineer.
+                        I will intrested in Programming Language & love Programming.</p>
+                </div>
+                <br>
+                <div class="btn-box">
+                    <a href="" class="them-btn btn-style-one">Read More</a>
+                    <br><br><br>
+                    <div class="image">
+                        <img src="{%static 'img/sign.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====End of About Section====-->
+
+</body>
+
+</html>

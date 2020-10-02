@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>सुमन ब्लग | Contact</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{%static 'css/main.css' %}">
+</head>
+
+<body>
+    <!--Header Section-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">सुमन ब्लग</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto col-md-8">
+                    <li class="nav-item active">
+                        <a class="nav-link mx-3" href="/">Home <i class="fa fa-home" aria-hidden="true"></i><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/about">About <i class="fa fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/blog">Blog <i class="fa fa-rss-square"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/gallery">Gallery <i class="fa fa-image"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/contact">Contact <i class="fa fa-address-book"></i></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="input border-0 " type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn-main btn btn-outline-success  my-sm-0" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--End of Header section-->
+
+
+
+    {% for message in messages %}
+    <!--From get bootstrap alert msg rakhako contact ma add hunda msg show garxa-->
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+        <strong>Message: </strong> {{ message }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% endfor %}
+
+
+    <!--Form Body start-->
+    <div class="container my-3 ">
+        <aside class="col-md-8 contact-leftsidebar">
+            <h2>Contact Form <i class="fa fa-address-book"></i></h2>
+            <form method="post" action="/contact">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" class="form-control" id="name" name="name" aria-describedby="name"
+                        placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                        placeholder="Enter your Email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Your Phone Number (with country code)</label>
+                    <input type="phone" class="form-control" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="content">Describe what you want to contact me for here</label>
+                    <textarea class="form-control" name="content" id="content" cols="30" rows="5"
+                        placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            </aside>
+
+    </div>
+    <!------====End of Form Body====-->
+
+    <!--Footer Section-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <!--<a class="footer-logo" href="#"> Blog </a>-->
+                    <h4>Rising</h4>
+                    <p>I am from Chitwan. I have done my schooling from Bright Star Secondary Boarding School Chitwan,
+                        and graduation Bachlor in Computer Engineering from Kantipur Engineering College Dhapakhel,
+                        Lalitpur.When I was on Engineering College. I had made up my mind to become a software engineer.
+                        I will intrested in Programming Language & love Programming.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h4>Usefull Links</h4>
+                    <ul>
+                        <li><a class="home" href="#">Home</a></li>
+                        <li><a class="contact" href="#">Contact</a></li>
+                        <li><a class="services" href="#">Terms of services</a></li>
+                        <li><a class="Privacy" href="#">Privacy Policy</a></li>
+                        <li><a class="newsletter" href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h4>Newsletter</h4>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="input" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn-main btn btn-outline-success my-2 my-sm-0" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="w-100 text-center credits">
+                <h6>Made by <a><em>Suman Mahato</em></a> &copy; 2020 || All right reserved </h6>
+            </div>
+        </div>
+        </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

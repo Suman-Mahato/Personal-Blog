@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>सुमन ब्लग | blogpost</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        /*Main CSS started */
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-weight: 700;
+            color: red;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        .navbar a {
+            color: #66FCF1;
+        }
+
+        input {
+            background-color: #1F2833;
+            color: #66FCF1;
+            padding: 0.4rem;
+        }
+
+
+        /*Header */
+        .navbar {
+            background-color: #0B0C10;
+            color: #66FCF1;
+        }
+
+        .navbar a {
+            color: #66FCF1;
+        }
+
+        .navbar input {
+            background-color: #1F2833;
+        }
+
+        .navbar-brand,
+        .footer-logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .btn-main {
+            background-color: #66FCF1;
+            color: #0B0C10;
+        }
+
+
+
+        /*Right Sides Social-Links */
+        .social-links {
+            background-color: #17a2b8;
+            color: #0B0C10;
+            font-size: 1.5rem;
+            border-left: 3px solid goldenrod;
+            border-right: 3px solid goldenrod;
+            border-top: 3px solid red;
+            border-bottom: 3px solid red;
+        }
+
+        .social-links a {
+            color: whitesmoke;
+        }
+
+        .social-links>a {
+            padding-top: 2rem;
+        }
+
+        .secondary-color {
+            background-color: #1F2833;
+        }
+
+        .aside-heading {
+            border-left: 3px solid brown;
+        }
+
+        .author p {
+            font-size: 0.9rem;
+        }
+
+        .author-social-links a {
+            margin-left: 0.8rem;
+        }
+
+        .badges {
+            margin-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .badges>a {
+            margin-left: 0.5rem;
+            padding: 0.3rem;
+            display: inline-block;
+            margin: 0.2rem;
+            background-color: rgb(47, 255, 151);
+            color: #0B0C10;
+        }
+
+        /*End of CSS of Social Icons*/
+
+        /*CSS Right side Useful Links*/
+        .low_nav {
+            font-size: 1.1rem;
+            font-weight: 700;
+            font-family: cursive;
+        }
+
+        .blog-post p{
+            font-family: cursive;
+        }
+
+
+        /*CSS End Right side Useful Links*/
+    </style>
+</head>
+</head>
+
+<body>
+    <!--Header Section-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">सुमन ब्लग</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link mx-3" href="/">Home <i class="fa fa-home" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/about">About <i class="fa fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/blog">Blog <i class="fa fa-rss-square" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/gallery">Gallery <i class="fa fa-image"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/contact">Contact <i class="fa fa-address-book"></i></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="input border-0 " type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn-main btn btn-outline-success  my-sm-0" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--End of Header section-->
+
+
+    <!---===Started of BlogPost Body====-->
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-8 blog-main">
+                <h3 class="pb-3 mb-4 font-italic border-bottom">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>{{post.title}}
+                </h3>
+
+                <div class="blog-post">
+                    <h2 class="blog-post-title">{{post.head0}}</h2>
+                    <p class="blog-post-meta">November 12, 2020 by <a href="#">Suman</a></p>
+
+                    <p>{{post.chead0}}</p>
+                    <hr>
+
+                    <h2>{{post.head1}}</h2>
+                    <p>{{post.chead1}}</p>
+
+                    <h2>{{post.head2}}</h2>
+                    <p>{{post.chead2}}</p>
+                    <div class="fb-comments" data-href="http://127.0.0.1:8000/blog/blogpost/{{post.post_id}}"
+                        data-numpost="5"></div>
+
+                </div><!-- /.blog-post -->
+                <hr>
+                <nav class="blog-pagination">
+                    <a class="btn btn-outline-primary" href="#">&#8249</a>
+                    <a class="btn btn-outline-primary" href="#">Next &raquo</a>
+                </nav>
+
+            </div>
+
+            <!--===Right Side Started====-->
+            <!-- /.blog-main -->
+
+            <aside class="col-md-4 blog-sidebar">
+                <div class="p-3 mb-3 bg-light rounded">
+                    <h4 class="font-italic"><i class="fa fa-envira" aria-hidden="true"></i>About</h4>
+                    <p class="mb-0">Hi! I am <em>Suman Mahato,</em>  a web designer/developer focused on crafting great web experiences. Designing and Coding have been my passion since the days I started working with computers but I found myself into web design/development since 2018. I enjoy creating beautifully designed, intuitive and functional websites..</p>
+                </div>
+
+
+
+                <!--=====Social Icons Added====-->
+                <div class="p-3 bg-light rounded">
+                    <h4 class="font-italic"><i class="fa fa-globe" aria-hidden="true"></i>Social Links</h4>
+                    <!--Right Side Social-links-->
+                    <div class="social-links row text-center">
+                        <div class="col-sm-4 py-3">
+                            <a href="#" class="social-link  w-100">
+                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-4 py-3 secondary-color">
+                            <a href="#" class="social-link w-100">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-4 py-3">
+                            <a href="#" class="social-link w-100">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-4 py-3 secondary-color">
+                            <a href="#" class="social-link  w-100">
+                                <i class="fa fa-google" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-4 py-3 ">
+                            <a href="#" class="social-link  w-100">
+                                <i class="fa fa-snapchat" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-4 py-3 secondary-color">
+                            <a href="#" class="social-link w-100">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--=====End of Social Icons Added====-->
+
+                <div class="p-3 bg-light rounded">
+                    <h4 class="font-italic"><i class="fa fa-link" aria-hidden="true"></i>Usefull Links</h4>
+                    <div class="low_nav col-md-4">
+                        <ul>
+                            <li><a class="home" href="/">Home</a></li>
+                            <li><a class="contact" href="/about">About</a></li>
+                            <li><a class="services" href="#">Blog</a></li>
+                            <li><a class="Privacy" href="/gallery">Gallery</a></li>
+                            <li><a class="newsletter" href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside><!-- /.blog-sidebar -->
+
+        </div>
+    </div>
+    <!---===Ended of BlogPost Body====-->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
